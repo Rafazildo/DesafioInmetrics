@@ -22,7 +22,7 @@ import static org.apache.commons.lang3.RandomStringUtils.*;
 
 public class CommonSteps {
 
-	public String cpfGerado = null;
+	private String cpfGerado;
 	private Map<String, IBy> webElements;
 
 	public CommonSteps() {
@@ -105,6 +105,11 @@ public class CommonSteps {
 		}
 		else
 			GetElement(checkbox).click();
+	}
+	
+	@Dado("limpo o campo (.*)$")
+	public void ClearField(String field) {
+		GetElement(field).clear();
 	}
 	
 	@Entao("fechar pagina")

@@ -30,7 +30,8 @@ public abstract class WebElements {
 			  put("empregados_campo_cargo"              , new ById("inputCargo"));			  
 			  put("empregados_campo_salario"            , new ById("dinheiro")); 
 			  put("empregados_radio_clt"                , new ById("clt")); 			  
-			  put("empregados_botao_enviar"             , new ByXpath("/html/body/div/div[2]/div/form/div[3]/input")); 			  
+			  put("empregados_botao_enviar"             , new ByXpath("/html/body/div/div[2]/div/form/div[3]/input"));
+			  put("empregados_botao_enviar_alteracao"   , new ByXpath("/html/body/div/div/div/form/div[3]/input"));			  
 			  put("empregados_mensagem_sucesso"         , new ByXpath("/html/body/div/div[1]/div"));
 			  put("empregados_campo_pesquisar"          , new ByXpath("//*[@id=\"tabela_filter\"]/label/input"));
 			  put("empregados_botao_editar"             , new ByXpath("//*[@id=\"tabela\"]/tbody/tr[1]/td[6]/a[2]/button"));	
